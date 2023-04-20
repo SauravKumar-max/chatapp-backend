@@ -4,7 +4,7 @@ const authVerify = require('../middlewares/authVerify');
 const { User } = require('../models/user.models');
 const { Chat } = require('../models/chat.models');
 const bcrypt = require('bcrypt');
-const mySecret = process.env['tokenSecret']
+const mySecret = process.env['TOKEN_SECRET'];
 const jwt = require('jsonwebtoken');
 
 router.route('/')
